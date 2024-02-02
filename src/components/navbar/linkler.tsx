@@ -132,6 +132,7 @@ export default function NavigationMenuDemo() {
                     <RiHome4Line  size={70} />
                       <p className="font-bold opacity-80">Anasayfa</p>
                     </div>
+                    
                     <p className="text-xs leading-tight text-muted-foreground text-white flex text-center opacity-70  ">
                       Anasayfa'ya dönerek Qr Menü sistemlerimiz hakkında detaylı bilgi alabilirsiniz.
                     </p>
@@ -147,6 +148,9 @@ export default function NavigationMenuDemo() {
               <ListItem href="/docs/primitives/typography" title="Typography">
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
+              <div>
+                asfdasf
+              </div>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
