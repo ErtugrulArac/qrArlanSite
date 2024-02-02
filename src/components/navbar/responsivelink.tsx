@@ -3,7 +3,7 @@ import { RiHome4Line } from "react-icons/ri";
 
 const responsivelink = () => {
     return (
-        <div className='shadow-lg  rounded-lg px-6 py-6'>
+        <div className='shadow-lg shadow-black  rounded-lg px-6 py-6'>
             <div className='bg-black rounded-lg'>
                 <a
                     className="flex h-full w-full select-none flex-col justify-end rounded-md  from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
