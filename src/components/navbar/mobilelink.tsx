@@ -17,7 +17,7 @@ export default function SheetDemo() {
     return (
         <Sheet>
             <SheetTrigger asChild>
-                <Button className="text-white max-md:text-xs py-1 px-2 font-bold border-none bg-transparent " variant="outline"><GiHamburgerMenu size={20} /></Button>
+                <Button className="text-white max-md:text-xs py-1 px-2 font-bold border-none bg-transparent " variant="outline"><GiHamburgerMenu size={22} /></Button>
             </SheetTrigger>
             <SheetContent className="overflow-auto" side={"left"}>
                 <SheetHeader>
@@ -31,7 +31,7 @@ export default function SheetDemo() {
                     <Responsivelink />
                 </div>
                 <div className="flex justify-center">
-                    <h1 className="font-bold text-center absolute bottom-2">ARLAN MEDYA</h1>
+                    <h1 className="font-bold text-center mt-4">ARLAN MEDYA</h1>
                 </div>
             </SheetContent>
         </Sheet>
