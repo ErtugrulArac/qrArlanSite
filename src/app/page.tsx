@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar"
 
 export default function Home() {
   return (
-    <div>
+    <div className="h-[200vh] bg-black">
      
     </div>
 
