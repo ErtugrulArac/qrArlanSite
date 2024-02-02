@@ -23,15 +23,15 @@ const responsivelink = () => {
             <div className='flex flex-col gap-6 mt-5 w-[96%] m-auto'>
                 <a href="https://oddmenu.com/">
                     <h2 className='font-semibold'>Untrodoction</h2>
-                    <p className='text-xs opacity-85 mt-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                    <p className='text-xs opacity-85 mt-1 tracking-wide'>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
                 </a>
                 <a href="">
                     <h2 className='font-semibold'>Untrodoction</h2>
-                    <p className='text-xs opacity-85 mt-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                    <p className='text-xs opacity-85 mt-1 tracking-wide'>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
                 </a>
                 <a href="">
                     <h2 className='font-semibold'>Untrodoction</h2>
-                    <p className='text-xs opacity-85 mt-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                    <p className='text-xs opacity-85 mt-1 tracking-wide'>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
                 </a>
             </div>
             <div className='flex justify-center items-center gap-4 mt-7'>

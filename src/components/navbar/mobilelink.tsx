@@ -19,7 +19,7 @@ export default function SheetDemo() {
             <SheetTrigger asChild>
                 <Button className="text-white max-md:text-xs py-1 px-2 font-bold border-none bg-transparent " variant="outline"><GiHamburgerMenu size={20} /></Button>
             </SheetTrigger>
-            <SheetContent side={"left"}>
+            <SheetContent className="overflow-auto" side={"left"}>
                 <SheetHeader>
                     <SheetTitle className="flex items-center justify-center"><img className="w-20 " src="siyahlogo.png" alt="" /></SheetTitle>
                     <SheetDescription>
@@ -30,8 +30,9 @@ export default function SheetDemo() {
                 <div className="gap-4 py-4 flex items-center justify-center flex-col">
                     <Responsivelink />
                 </div>
-                <h1 className="font-bold text-center">ARLAN MEDYA</h1>
-
+                <div className="flex justify-center">
+                    <h1 className="font-bold text-center absolute bottom-2">ARLAN MEDYA</h1>
+                </div>
             </SheetContent>
         </Sheet>
     )
