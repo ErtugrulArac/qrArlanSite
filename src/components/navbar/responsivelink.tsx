@@ -11,7 +11,7 @@ const responsivelink = () => {
                 >
 
                     <div className="mb-2 mt-4 text-lg font-medium flex items-center flex-col text-white ">
-                        <RiHome4Line size={50} />
+                        <RiHome4Line size={40} />
                         {/* <p className="font-bold opacity-80 text-md">Anasayfa</p> */}
                     </div>
 
