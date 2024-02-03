@@ -4,32 +4,32 @@ import { RiHome4Line } from "react-icons/ri";
 const responsivelink = () => {
     return (
         <div className='shadow-lg shadow-black  rounded-lg px-6 py-6'>
-            <div className='bg-black rounded-lg'>
+            <div className='bg-black rounded-lg '>
                 <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md  from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md  from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
                     href="/"
                 >
 
                     <div className="mb-2 mt-4 text-lg font-medium flex items-center flex-col text-white ">
-                        <RiHome4Line size={70} />
-                        <p className="font-bold opacity-80">Anasayfa</p>
+                        <RiHome4Line size={50} />
+                        {/* <p className="font-bold opacity-80 text-md">Anasayfa</p> */}
                     </div>
 
-                    <p className="text-xs leading-tight text-muted-foreground text-white flex text-center opacity-70  ">
+                    {/* <p className="text-xs leading-tight text-muted-foreground text-white flex text-center opacity-70  ">
                         Anasayfa'ya dönerek Qr Menü sistemlerimiz hakkında detaylı bilgi alabilirsiniz.
-                    </p>
+                    </p> */}
                 </a>
             </div>
-            <div className='flex flex-col gap-6 mt-5 w-[96%] m-auto'>
-                <a href="https://oddmenu.com/">
+            <div className='flex flex-col gap-6 mt-5 w-[96%] m-auto '>
+                <a className='border-b-[1px] pb-3 border-black' href="https://oddmenu.com/">
                     <h2 className='font-semibold'>Untrodoction</h2>
                     <p className='text-xs opacity-85 mt-1 tracking-wide'>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
                 </a>
-                <a href="">
+                <a className='border-b-[1px] pb-3 border-black' href="">
                     <h2 className='font-semibold'>Untrodoction</h2>
                     <p className='text-xs opacity-85 mt-1 tracking-wide'>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
                 </a>
-                <a href="">
+                <a className='border-b-[1px] pb-3 border-black' href="">
                     <h2 className='font-semibold'>Untrodoction</h2>
                     <p className='text-xs opacity-85 mt-1 tracking-wide'>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
                 </a>
