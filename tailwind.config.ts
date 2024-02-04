@@ -14,6 +14,8 @@ const config = {
       fontFamily: {
         fontum: ["Plus Jakarta Sans", "sans-serif"],
         font2: ["Protest Riot", "sans-serif"],
+        fontpopins: ["Poppins", "sans-serif"],
+
       
     },
     container: {
