@@ -7,7 +7,7 @@ import Resim from './resim';
 const typeanimation = () => {
     return (
         <div className='text-white flex flex-col justify-center items-center  gap-5'>
-            <p className='w-[580px] max-md:w-[70%] text-4xl font-fontum font-bold max-md:text-3xl  text-center'>saniyeler İçinde qr menünüz hazır!
+            <p className='w-[580px] max-md:w-[85%] text-4xl font-fontum font-black max-md:text-3xl  text-center'>saniyeler İçinde qr menünüz <br /> hazır!
 
                 <span className='ml-3 text-3xl max-md:text-2xl'>
                     <TypeAnimation className='px-1 py-1 bg-zinc-700 rounded-lg'
@@ -28,7 +28,7 @@ const typeanimation = () => {
                 </span>
             </p>
 
-            <p className='font-fontum font-bold text-center text-2xl max-md:text-lg opacity-90'> işletmeniz için özel qr çözümleri</p>
+            <p className='font-fontum font-extrabold text-center text-2xl max-md:text-xl opacity-90'> işletmeniz için özel qr çözümleri</p>
             <div>
                 <Resim />
             </div>
