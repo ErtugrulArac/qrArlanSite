@@ -30,7 +30,7 @@ const typeanimation = () => {
                 </span>
             </p>
 
-            <p className='font-fontum font-extrabold text-center text-3xl max-md:text-2xl opacity-90'> işletmeniz için özel qr çözümleri</p>
+            <p className='font-fontum font-extrabold text-center text-3xl max-md:text-xl opacity-90'> işletmeniz için özel qr çözümleri</p>
             <div className='xl:hidden'>
                 <Resim />
             </div>
