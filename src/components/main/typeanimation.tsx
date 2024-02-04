@@ -20,6 +20,8 @@ const typeanimation = () => {
                             1000,
                             'hızlı',
                             1000,
+                            'masrafsız',
+                            1000,
                         ]}
                         wrapper='span'
                         speed={50}
@@ -29,7 +31,7 @@ const typeanimation = () => {
             </p>
 
             <p className='font-fontum font-extrabold text-center text-2xl max-md:text-xl opacity-90'> işletmeniz için özel qr çözümleri</p>
-            <div>
+            <div className='xl:hidden'>
                 <Resim />
             </div>
             <a className='px-7 py-2 rounded-lg font-semibold bg-[#333333] text-white opacity-100' href="">menüler</a>
