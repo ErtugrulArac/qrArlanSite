@@ -15,7 +15,7 @@ const index = () => {
                         <Linkler />
                     </div>
                 </div>
-                <div className='flex items-center gap-7 md:hidden'><Mobilelink /></div>
+                <div className='flex items-center  gap-7 md:hidden'><Mobilelink /></div>
                 <div className='max-md:hidden'>
                     <Arlan />
                 </div>

@@ -59,64 +59,7 @@ export default function NavigationMenuDemo() {
   return (
     <NavigationMenu>
       <NavigationMenuList className="flex   gap-4">
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-white max-md:text-xs py-1 px-2 font-bold bg-transparent max-md:text-black ">İletişime Geç</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[200px] gap-3 p-1 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
-              <li className="row-span-3">
-                <NavigationMenuLink className="" asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="https://api.whatsapp.com/send?phone=905307464899&text=Merhaba.%20Qr%20Web%20Siteniz%20%C3%BCzerinden%20ileti%C5%9Fime%20ge%C3%A7iyorum%20yard%C4%B1mc%C4%B1%20olabilir%20misiniz%3F"
-                  >
 
-                    <div className="mb-2 mt-4 max-md:mt-2 text-lg font-medium flex justify-center items-center flex-col gap-2">
-                      <img className="w-10 max-md:w-8" src="wp.svg" alt="" />
-                      <p className="font-bold max-md:text-sm">WhatsApp</p>
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground flex text-center max-md:text-xs">
-                      Tıklayarak WhatsaApp üzerinden mesaj yolu ile bize ulaşabilirsiniz...
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-
-                    <div className="mb-2 mt-4 max-md:mt-2 text-lg font-medium flex flex-col items-center ">
-                      <img className="max-md:w-10" src="instagram.svg" alt="" />
-                      <p className="font-bold max-md:text-sm">Instagram</p>
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground flex text-center max-md:text-xs">
-                      Tıklayarak Instagram üzerinden mesaj yolu ile bize ulaşabilirsiniz...
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-
-                    <div className="mb-2 mt-4 max-md:mt-2 text-lg font-medium flex justify-center items-center flex-col gap-2">
-                      <img className="w-10 max-md:w-8" src="mail.svg" alt="" />
-                      <p className="font-bold max-md:text-sm">E-Mail</p>
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground flex text-center max-md:text-xs">
-                      Tıklayarak E-Mail üzerinden mesaj yolu ile bize ulaşabilirsiniz...
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="text-white max-md:text-xs py-1 px-2 font-bold bg-transparent max-md:text-black  ">Getting started</NavigationMenuTrigger>
           <NavigationMenuContent className="w-full  ">

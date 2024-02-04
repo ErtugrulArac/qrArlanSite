@@ -27,12 +27,10 @@ export default function SheetDemo() {
                     </SheetDescription>
                 </SheetHeader>
 
-                <div className="gap-4 py-4 flex items-center justify-center flex-col">
+                <div className=" py-4 w-full">
                     <Responsivelink />
                 </div>
-                <div className="flex justify-center">
-                    <h1 className="font-bold text-center mt-4">ARLAN MEDYA</h1>
-                </div>
+
             </SheetContent>
         </Sheet>
     )
