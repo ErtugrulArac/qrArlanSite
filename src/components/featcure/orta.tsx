@@ -3,7 +3,7 @@ import React from 'react'
 const orta = () => {
     return (
         <div>
-            <div className='flex flex-col mt-32 max-md:mt-10'>
+            <div className='flex flex-col mt-32 max-md:mt-10 mb-32'>
                 <h2 className='leading-normal text-5xl'><b className=''>Özellikler</b> Avantajlar</h2>
                 <div className='h-[4px] w-20 bg-[#00af74] rounded-xl mt-3'></div>
                 <p className='w-[80%] mt-7'>İşletmenizde Qr Menu sistemlerimizi kullanmanız için <b>5</b> neden.</p>
