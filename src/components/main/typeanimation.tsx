@@ -34,8 +34,8 @@ const typeanimation = () => {
             <div className='xl:hidden'>
                 <Resim />
             </div>
-            <a className='px-7 py-2 rounded-lg font-semibold bg-[#333333] text-white opacity-100' href="">menüler</a>
-            <a className='px-7 py-2 rounded-lg font-semibold bg-[#514fe0] text-white' href="">bilgi alın</a>
+            <a className='px-7 py-2 rounded-lg font-semibold bg-[#333333] text-white opacity-100 whitespace-nowrap' href="">menüler</a>
+            <a className='px-7 py-2 rounded-lg font-semibold bg-[#514fe0] text-white whitespace-nowrap' href="">bilgi alın</a>
 
 
         </div>
