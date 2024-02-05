@@ -13,7 +13,7 @@ const config = {
    
       fontFamily: {
         fontum: ["Plus Jakarta Sans", "sans-serif"],
-        font2: ["Protest Riot", "sans-serif"],
+        bebas: ["Bebas Neue", "sans-serif"],
         fontpopins: ["Poppins", "sans-serif"],
 
       
