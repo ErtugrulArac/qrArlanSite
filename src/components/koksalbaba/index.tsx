@@ -29,7 +29,7 @@ const index = () => {
         </ul>
         <a className='w-max px-7 py-2 rounded-xl font-semibold bg-[#8b38cb] text-white whitespace-nowrap xl:text-lg max-md:text-base mt-3' href="">şimdi bilgi alın</a>
       </div>
-      <img className='w-[550px] rounded-md' src="yeni.png" alt="" />
+      <img className='w-[550px] max-md:object-cover max-md:w-[700px] rounded-md' src="kucukkoksal.png" alt="" />
     </div>
   )
 }
