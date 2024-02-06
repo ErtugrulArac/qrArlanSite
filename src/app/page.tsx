@@ -4,6 +4,7 @@ import Main from "@/components/main"
 import Ozellik from "@/components/featcure/index"
 import Koksal from "@/components/koksalbaba/index"
 import Sayac from "@/components/sayac/index"
+import Mockup from "@/components/mockup/index"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Ozellik />
       <Koksal />
       <Sayac/>
+      <Mockup/>
     </div>
 
   );
