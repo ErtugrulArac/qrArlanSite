@@ -7,7 +7,11 @@ import {
 
 export default function AccordionDemo() {
     return (
+<<<<<<< HEAD
         <Accordion  type="single" collapsible className="w-full  ">
+=======
+        <Accordion type="single" collapsible className="w-full">
+>>>>>>> ef979dc3f6703ef5f6d5ba2fc307a9aedfc35bba
             <AccordionItem className="w-full" value="item-1">
                 <AccordionTrigger className="font-bold text-xl max-md:text-lg">Is it accessible?</AccordionTrigger>
                 <AccordionContent>
@@ -44,4 +48,8 @@ export default function AccordionDemo() {
             </AccordionItem>
         </Accordion>
     )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ef979dc3f6703ef5f6d5ba2fc307a9aedfc35bba
