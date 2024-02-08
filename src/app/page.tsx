@@ -6,6 +6,7 @@ import Koksal from "@/components/koksalbaba/index"
 import Sayac from "@/components/sayac/index"
 import Mockup from "@/components/mockup/index"
 import Sorular from "@/components/sorular/index"
+import Arka from "@/components/arkaplan/index"
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Sayac />
       <Mockup />
       <Sorular/>
+      <Arka/>
     </div>
 
   );
