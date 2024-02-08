@@ -87,6 +87,6 @@
 @media screen and (max-width: 650px) {
   .foto {
     background-size: contain;
-    background-image:url("/plan.png") ;
+    background-image:url("/plan2.png") ;
   }
 }
