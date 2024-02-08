@@ -4,8 +4,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -87,6 +90,6 @@
 @media screen and (max-width: 650px) {
   .foto {
     background-size: contain;
-    background-image:url("/plan2.png") ;
+    background-image: url("/plan2.png");
   }
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar"
+import Footer from "@/components/footer/index"
 
 
 
@@ -22,7 +23,10 @@ export default function RootLayout({
       <body className="bg-black">
         <main className="font-fontum bg-black">
           <Navbar />
-          {children}</main>
+          {children}
+          <Footer />
+          </main>
+           
       </body>
     </html>
   );

@@ -15,6 +15,10 @@ const config = {
         fontum: ["Plus Jakarta Sans", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
         fontpopins: ["Poppins", "sans-serif"],
+        regular: ["Oswald", "sans-serif"],
+        passion: ["Passion One", "sans-serif"],
+
+
 
       
     },
