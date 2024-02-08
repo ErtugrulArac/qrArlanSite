@@ -83,19 +83,10 @@
     @apply bg-background text-foreground;
   }
 }
-.foto{
-  background-image: url("/500.png"); 
-  
-  background-size :contain;
-}
-@media screen and (max-width: 1617px) {
-  .foto {
-    background-size: contain;
-  }
-}
+
 @media screen and (max-width: 650px) {
   .foto {
     background-size: contain;
-    background-image:url("/650.png") ;
+    background-image:url("/plan.png") ;
   }
 }
