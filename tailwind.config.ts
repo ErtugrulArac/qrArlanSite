@@ -17,6 +17,8 @@ const config = {
         fontpopins: ["Poppins", "sans-serif"],
         regular: ["Oswald", "sans-serif"],
         passion: ["Passion One", "sans-serif"],
+        roboto: ["Roboto Condensed", "sans-serif"],
+
 
 
 
