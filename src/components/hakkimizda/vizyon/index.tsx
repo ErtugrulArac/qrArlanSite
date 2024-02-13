@@ -5,7 +5,7 @@ const index = () => {
     <div className='bg-white '>
       <div className='w-[60%] max-md:w-[95%] m-auto'>
         <h3 className='text-3xl font-fontpopins font-bold'>Vizyonumuz</h3>
-        <div className='flex max-lg:flex-col gap-36 max-md:gap-12 max-lg:gap-12 mt-10 max-md:mt-7'>
+        <div className='flex max-lg:flex-col gap-36 max-md:gap-8 max-lg:gap-12 mt-10 max-md:mt-7'>
           <p className='font-semibold max-md:text-sm  max-md:opacity-70'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, officia mollitia! Cum porro exercitationem doloribus harum? Numquam minus, pariatur beatae reprehenderit vitae voluptatum mollitia aliquid hic eum, sed dolorum! Tempora.
           </p>
