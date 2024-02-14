@@ -22,7 +22,7 @@ export default function HoverCardDemo() {
         <div className="flex justify-between space-x-4">
           <Avatar>
             <AvatarImage src="arlan.png" />
-            <AvatarFallback>VC</AvatarFallback>
+            <AvatarFallback>AR</AvatarFallback>
           </Avatar>
           <div className="space-y-1">
             <h4 className="text-sm font-semibold">@arlanmedya</h4>
