@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { comments } from "./yorumlar"
 
 export default function CarouselOrientation() {
   return (
@@ -19,12 +20,13 @@ export default function CarouselOrientation() {
       className="w-full max-w-xs"
     >
       <CarouselContent className="-mt-1 h-[200px]">
-        {Array.from({ length: 5 }).map((_, index) => (
+        {comments.map((yorum, index) => (
           <CarouselItem key={index} className="pt-1 md:basis-1/2">
             <div className="p-1">
               <Card>
                 <CardContent className="flex items-center justify-center p-6">
-                  <span className="text-3xl font-semibold">{index + 1}</span>
+                  <span className="text-3xl font-semibold">{yorum.comment}</span>
+                  <span className="text-3xl font-semibold">{yorum.name}</span>
                 </CardContent>
               </Card>
             </div>
