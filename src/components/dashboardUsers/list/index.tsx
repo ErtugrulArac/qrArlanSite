@@ -5,7 +5,7 @@ import { url } from '@/lib/url'
 
 const getData = async () => {
     try {
-        const res = await fetch(`${url}/api/getMessages`, {
+        const res = await fetch(`https://qr-arlan-site.vercel.app/api/getMessages`, {
             cache: "no-store",
         });
 
