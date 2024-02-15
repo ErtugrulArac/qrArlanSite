@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer/index"
+import Wp from "@/components/wp"
 
 
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-black">
         <main className="font-fontum bg-black">
+        <Wp />
           <Navbar />
           {children}
           <Footer />

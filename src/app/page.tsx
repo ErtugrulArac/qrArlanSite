@@ -10,6 +10,7 @@ import Arka from "@/components/arkaplan/index"
 import Referans from "@/components/referanslar/index"
 
 
+
 export default function Home() {
   return (
     <div className="bg-black">

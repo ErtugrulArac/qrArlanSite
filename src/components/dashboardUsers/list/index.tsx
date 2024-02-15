@@ -1,10 +1,30 @@
 
 import React from 'react'
-import { getMessage } from '@/actions/getMessages'
+import { url } from '@/lib/url'
+
+
+const getData = async () => {
+    try {
+        const res = await fetch(`${url}/api/getMessages`, {
+            cache: "no-store",
+        });
+
+        if (!res.ok) {
+            throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+
+        const result = await res.json();
+
+        return result;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        return [];
+    }
+}
 
 const index = async () => {
 
-    const data = await getMessage();
+    const data = await getData();
 
     data.reverse();
     return (
