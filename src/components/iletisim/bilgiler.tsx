@@ -2,7 +2,7 @@ import React from 'react'
 
 const bilgiler = () => {
     return (
-        <div className='flex flex-col items-center justify-center mt-36 gap-8'>
+        <div className='flex flex-col items-center justify-center mt-28 max-md:mt-20 gap-8'>
             <h4 className='text-6xl max-md:text-4xl font-fontpopins'>-İLETİŞİM-</h4>
             <div className='flex flex-col items-center'>
                 <p className='text-xl max-md:text-lg font-semibold'>+90 0530 746 4899</p>
