@@ -1,40 +1,12 @@
-import * as React from "react"
+import React from 'react'
+import Comments from './comments'
 
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import { comments } from "./yorumlar"
-
-export default function CarouselOrientation() {
+const index = () => {
   return (
-    <Carousel
-      opts={{
-        align: "start",
-      }}
-      orientation="vertical"
-      className="w-full max-w-xs"
-    >
-      <CarouselContent className="-mt-1 h-[200px]">
-        {comments.map((yorum, index) => (
-          <CarouselItem key={index} className="pt-1 md:basis-1/2">
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex items-center justify-center p-6">
-                  <span className="text-3xl font-semibold">{yorum.comment}</span>
-                  <span className="text-3xl font-semibold">{yorum.name}</span>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+    <div className='bg-white py-20 flex flex-col gap-20'>
+      <Comments />
+    </div>
   )
 }
+
+export default index
