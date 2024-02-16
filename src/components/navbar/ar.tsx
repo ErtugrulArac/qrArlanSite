@@ -27,7 +27,7 @@ export default function HoverCardDemo() {
           <div className="space-y-1">
             <h4 className="text-sm font-semibold">@arlanmedya</h4>
             <p className="text-sm">
-            Copyright© all rights reserved
+            Copyright© all rights reserved <br />
             Tüm Hakları Saklıdır 
             </p>
             <div className="flex items-center pt-2">

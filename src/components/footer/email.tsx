@@ -6,9 +6,9 @@ const email = () => {
             <h6 className='text-5xl max-md:text-2xl font-passion'>Arlan Medya QR Menü Sistemleri</h6>
             <p className='max-md:text-xs'>Hızlı, hijyenik, pratik: Arlan Medya QR Menüleri ile işletmenizin müşterilerine lezzeti keşfettirin!</p>
             <div className='flex gap-16 max-md:mt-5 max-md:gap-8'>
-                <a  className='bg-[#131313] py-1 w-36 flex items-center gap-3 rounded-xl text-center justify-center' href="">
+                <a  className='bg-[#131313] py-1 w-36 flex items-center gap-3 rounded-xl text-center justify-center' href="/hakkimizda">
                     <img className='size-5' src="göz.svg" alt="" />Hakkımızda</a>
-                <a className='bg-[#131313] py-1 w-36 flex items-center gap-3 rounded-xl text-center justify-center' href="">
+                <a className='bg-[#131313] py-1 w-36 flex items-center gap-3 rounded-xl text-center justify-center' href="/iletisim">
                     <img className='size-5' src="el.svg" alt="" />İletişim</a>
             </div>
         </div>

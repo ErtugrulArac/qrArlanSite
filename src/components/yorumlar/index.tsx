@@ -3,7 +3,7 @@ import Comments from './comments'
 
 const index = () => {
   return (
-    <div id='yorumlar' className='bg-white scroll-mt-[100px]  py-20 flex flex-col gap-20'>
+    <div id='yorumlar' className='bg-white scroll-mt-[100px] py-20  max-md:pt-3 max-md:pb-20  flex flex-col gap-20'>
       <Comments />
     </div>
   )
