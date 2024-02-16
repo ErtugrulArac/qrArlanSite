@@ -1,8 +1,8 @@
 export const comments = [
     {
         id: 1,
-        name: "Arlan",
-        comment: "This is a great article!",
+        name: "Alp Aras",
+        comment: "Reklam operasyonları gayet başarılıydı Erzurum İçin tam istediğimiz kitleye ulaştık ve satışlarımızı yaptık. Tek problemimiz zamanlamaydı erteleme durumları yaşadık. Planlamalar daha önceden yapılsa daha iyi olmaz mı ☺?",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const comments = [
     {
         id: 4,
         name: "Eto fati",
-        comment: "I'm glad you like it.asdas dasdasda sdasdas das dad asdas dasd asdasdasdad asdasdasd asdasdasdasd asdasdasdad asdasdasd asdasdasd asdasdasd asdasdasdasdads asdasdasd asda sdaa asd asd ad adasd asd ad sasdasdasd as dasaa adsad d a a ad",
+        comment: "I'm glad you like it.asdas dasdasda sdasdas das dad asdas dasd asdasdasdad asdasdasd asdasdasdasd asdasdasdad asdasdasd asdasdasd asdasdasd asdasdasdasdads asdasdasd asda sdaa asd asd ad adasd asd ad sasdasdasd as dasaa adsad d a a ad asdasdasdasd asdasdasdad asdasdasd asdasdasd asdasdasd asdasdasdasd asdasdasdad asdasdasd asdasdasd asdasdasd",
     },
     {
         id: 5,
