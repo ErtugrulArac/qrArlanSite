@@ -86,10 +86,10 @@ export default function NavigationMenuDemo() {
                 Arlan Medya hakkında detaylı bilgi alabilirsiniz.
               </ListItem>
               <ListItem href="/iletisim" title="İletişim">
-                Bu sayfadan bizle iletişime geçebilirsiniz.
+                Bu sayfadan Arlan Medya ile iletişime geçebilirsiniz.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="#yorumlar" title="Müşteri Yorumlar">
+                Arlan Medya için Erzrurum qr menü müşteri yorumları.
               </ListItem>
             </ul>
           </NavigationMenuContent>

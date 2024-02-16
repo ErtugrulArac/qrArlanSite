@@ -19,7 +19,7 @@ const responsivelink = () => {
                 <RiContactsLine size={30} /> İletişim
             </a> <a className='flex  items-center gap-6 text-lg font-medium opacity-90' href="">
                 <MdOutlineRestaurantMenu size={30} /> Menüler
-            </a> <a className='flex  items-center gap-6 text-lg font-medium opacity-90' href="">
+            </a> <a className='flex  items-center gap-6 text-lg font-medium opacity-90' href="#yorumlar">
                 <FaRegComment size={30} /> Yorumlar
             </a>
 
