@@ -61,7 +61,7 @@ export default function NavigationMenuDemo() {
       <NavigationMenuList className="flex   gap-4">
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-white max-md:text-xs py-1 px-2 font-bold bg-transparent max-md:text-black  ">Getting started</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-white max-md:text-xs py-1 px-2 font-bold bg-transparent max-md:text-black  ">Menü</NavigationMenuTrigger>
           <NavigationMenuContent className="w-full  ">
             <ul className="grid gap-3 p-4 md:w-[400px] max-md:w-full lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
               <li className="row-span-3 ">
@@ -85,8 +85,8 @@ export default function NavigationMenuDemo() {
               <ListItem href="/hakkimizda" title="Hakkımızda">
                 Arlan Medya hakkında detaylı bilgi alabilirsiniz.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/iletisim" title="İletişim">
+                Bu sayfadan bizle iletişime geçebilirsiniz.
               </ListItem>
               <ListItem href="/docs/primitives/typography" title="Typography">
                 Styles for headings, paragraphs, lists...etc
