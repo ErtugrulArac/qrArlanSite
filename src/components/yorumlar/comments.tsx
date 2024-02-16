@@ -1,5 +1,6 @@
 import * as React from "react"
 import { comments } from "./yorumlar"
+import { FaUserCheck } from "react-icons/fa6";
 
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -25,8 +26,9 @@ export default function CarouselOrientation() {
             <div className="p-1  flex items-center justify-center w-full">
               <Card className=" flex items-center justify-center md:w-[60%] w-[90%]">
                 <CardContent className="flex flex-col gap-8 items-center justify-center p-6">
+                <FaUserCheck size={30} />
                   <span className="font-fontpopins font-normal">{item.comment}</span>
-                  <span className="text-xl font-semibold text-[#8b38cb] font-fontpopins">{item.name}</span>
+                  <span className="text-xl flex items-center gap-3 font-semibold text-[#8b38cb] font-fontpopins">  {item.name} </span>
                 </CardContent>
               </Card>
             </div>
