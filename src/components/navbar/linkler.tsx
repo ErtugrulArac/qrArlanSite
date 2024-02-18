@@ -44,7 +44,7 @@ export default function NavigationMenuDemo() {
               <ListItem href="/hakkimizda" title="Hakkımızda">
                 Arlan Medya hakkında detaylı bilgi alabilirsiniz.
               </ListItem>
-              <ListItem href="/iletisim" title="İletişim">
+              <ListItem href="/iletisim" rel="canonical" title="İletişim">
                 Bu sayfadan Arlan Medya ile iletişime geçebilirsiniz.
               </ListItem>
               <ListItem href="#yorumlar" title="Müşteri Yorumlar">
