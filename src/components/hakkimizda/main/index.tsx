@@ -8,7 +8,7 @@ const index = () => {
                     <h2 className='text-6xl max-md:text-4xl font-fontpopins font-bold max-xl:text-5xl'>Hakkımızda</h2>
                     <p className='text-2xl max-md:text-base leading-relaxed font-medium w-[90%] max-md:opacity-70'>Arlan Medya olarak, Erzurum'daki ofisimizde 2021 yılından beri müşterilerimize hizmet vermekteyiz.  </p>
                 </div>
-                <img className='w-[500px] rounded-3xl max-md:rounded-none  max-md:w-full max-xl:ml-10 max-lg:ml-0' src="arlan.gif" alt="" />
+                <img className='w-[500px] rounded-3xl max-md:rounded-none  max-md:w-full max-xl:ml-10 max-lg:ml-0' src="arlan.gif" alt="kolay qr menü" />
             </div>
         </div>
     )

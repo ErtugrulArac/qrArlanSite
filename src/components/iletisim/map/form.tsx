@@ -131,7 +131,7 @@ const page = () => {
                         </div>
                         {error && <div className='bg-red-500 w-full p-3 rounded-lg text-center'>{error}</div>}
                         <Button className='w-full bg-white hover:bg-gray-300  text-black flex gap-3' disabled={isPending}>
-                            Gönder <img className='size-6' src="send.svg" alt="mail" />
+                            Gönder <img className='size-6' src="send.svg" alt="mail qr menü" />
                         </Button>
                     </form>
                 </Form>

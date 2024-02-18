@@ -11,23 +11,23 @@ const bilgiler = () => {
             </div>
             <p> Lalapaşa, 25010 Yakutiye/Erzurum</p>
             <div className='flex gap-5 '>
-                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://www.instagram.com/arlanmedya/">
-                    <img src="logosvg/ınstagram.svg" alt="" />
+                <a title='qr menü instagram' className='w-14 max-md:w-8' target='_blank' rel="nofollow" href="https://www.instagram.com/arlanmedya/">
+                    <img src="logosvg/ınstagram.svg" alt="qr menü instagram" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://www.facebook.com/profile.php?id=61552451652567&paipv=0&eav=Afazva3lQXsO8wlU165om_7H6NcrVX-jTE6xkmllfgDo-svhTgWjynqU3FpaGMYRFdo">
-                    <img src="logosvg/facebook.svg" alt="" />
+                <a title='qr menü facebook' className='w-14 max-md:w-8' target='_blank' rel="nofollow" href="https://www.facebook.com/profile.php?id=61552451652567&paipv=0&eav=Afazva3lQXsO8wlU165om_7H6NcrVX-jTE6xkmllfgDo-svhTgWjynqU3FpaGMYRFdo">
+                    <img src="logosvg/facebook.svg" alt="qr menü facebook" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://www.linkedin.com/company/arlan-medya">
-                    <img src="logosvg/linkedn.svg" alt="" />
+                <a title='qr menü linkedn' className='w-14 max-md:w-8' target='_blank' rel="nofollow" href="https://www.linkedin.com/company/arlan-medya">
+                    <img src="logosvg/linkedn.svg" alt="qr menü linkedn" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://twitter.com/arlanmedya">
-                    <img src="logosvg/x.svg" alt="" />
+                <a title='qr menü x' className='w-14 max-md:w-8' target='_blank' rel="nofollow" href="https://twitter.com/arlanmedya">
+                    <img src="logosvg/x.svg" alt="qr menü x" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://www.youtube.com/@ArlanMedya">
-                    <img src="logosvg/youtube.svg" alt="" />
+                <a title='qr menü youtube' className='w-14 max-md:w-8' target='_blank' rel="nofollow" href="https://www.youtube.com/@ArlanMedya">
+                    <img src="logosvg/youtube.svg" alt="qr menü youtube" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://tr.pinterest.com/arlanmedya/">
-                    <img src="logosvg/pinterest.svg" alt="" />
+                <a title='qr menü pinterest' className='w-14 max-md:w-8' target='_blank' rel="nofollow" href="https://tr.pinterest.com/arlanmedya/">
+                    <img src="logosvg/pinterest.svg" alt="qr menü pinterest" />
                 </a>
             </div>
         </div>

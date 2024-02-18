@@ -9,22 +9,22 @@ const orta = () => {
                 <p className='w-[80%] mt-7'>İşletmenizde Arlan Medya Qr Menu sistemlerimizi kullanmanız için <b>5</b> neden.</p>
                 <ul className='flex flex-col gap-3 mt-7'>
                     <li className='flex items-center gap-2 '>
-                        <img className='size-6' src="verified.svg" alt="" /> <p className='text-xl  font-semibold tracking-wide'>5 farklı qr kod teması.</p>
+                        <img className='size-6' src="verified.svg" alt="qr menü erzurum" /> <p className='text-xl  font-semibold tracking-wide'>5 farklı qr kod teması.</p>
                     </li>
                     <li className='flex items-center gap-2 '>
-                        <img className='size-6' src="verified.svg" alt="" /> <p className='text-xl font-semibold tracking-wide '> Hızlı ve pratik kurulur.</p>
+                        <img className='size-6' src="verified.svg" alt="qr menü erzurum" /> <p className='text-xl font-semibold tracking-wide '> Hızlı ve pratik kurulur.</p>
                     </li>
                     <li className='flex items-center gap-2 '>
-                        <img className='size-6' src="verified.svg" alt="" /> <p className='text-xl font-semibold tracking-wide '> Sipariş sürecini hızlandırır.</p>
+                        <img className='size-6' src="verified.svg" alt="qr menü erzurum" /> <p className='text-xl font-semibold tracking-wide '> Sipariş sürecini hızlandırır.</p>
                     </li>
                     <li className='flex items-center gap-2 '>
-                        <img className='size-6' src="verified.svg" alt="" /> <p className='text-xl font-semibold tracking-wide '>Tek seferlik ödeme.</p>
+                        <img className='size-6' src="verified.svg" alt="qr menü erzurum" /> <p className='text-xl font-semibold tracking-wide '>Tek seferlik ödeme.</p>
                     </li>
                     <li className='flex items-center gap-2 '>
-                        <img className='size-6' src="verified.svg" alt="" /> <p className='text-xl font-semibold tracking-wide '> Müşteri sağlığını korur.</p>
+                        <img className='size-6' src="verified.svg" alt="qr menü erzurum" /> <p className='text-xl font-semibold tracking-wide '> Müşteri sağlığını korur.</p>
                     </li>
                 </ul>
-                <a className='w-max px-7 py-2 rounded-xl font-semibold bg-[#00af74] text-white whitespace-nowrap xl:text-lg mt-3' href="/iletisim">bilgi alın</a>
+                <a className='w-max px-7 py-2 rounded-xl font-semibold bg-[#00af74] text-white whitespace-nowrap xl:text-lg mt-3' title='Arlan Medya İletişim' href="/iletisim">bilgi alın</a>
                 <p className='w-[70%] max-md:w-full text-xs text-[#00af74] mt-5 '>
                     Daha birçok qr menü özelliklerinden ve avantajlarından yararlanarak işletmenizi öne çıkarmak için iletişime geçin.
                 </p>
