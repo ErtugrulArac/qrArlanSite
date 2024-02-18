@@ -11,22 +11,22 @@ const bilgiler = () => {
             </div>
             <p> Lalapaşa, 25010 Yakutiye/Erzurum</p>
             <div className='flex gap-5 '>
-                <a className='w-14 max-md:w-8' target='_blank' href="https://www.instagram.com/arlanmedya/">
+                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://www.instagram.com/arlanmedya/">
                     <img src="logosvg/ınstagram.svg" alt="" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' href="https://www.facebook.com/profile.php?id=61552451652567&paipv=0&eav=Afazva3lQXsO8wlU165om_7H6NcrVX-jTE6xkmllfgDo-svhTgWjynqU3FpaGMYRFdo">
+                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://www.facebook.com/profile.php?id=61552451652567&paipv=0&eav=Afazva3lQXsO8wlU165om_7H6NcrVX-jTE6xkmllfgDo-svhTgWjynqU3FpaGMYRFdo">
                     <img src="logosvg/facebook.svg" alt="" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' href="https://www.linkedin.com/company/arlan-medya">
+                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://www.linkedin.com/company/arlan-medya">
                     <img src="logosvg/linkedn.svg" alt="" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' href="https://twitter.com/arlanmedya">
+                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://twitter.com/arlanmedya">
                     <img src="logosvg/x.svg" alt="" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' href="https://www.youtube.com/@ArlanMedya">
+                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://www.youtube.com/@ArlanMedya">
                     <img src="logosvg/youtube.svg" alt="" />
                 </a>
-                <a className='w-14 max-md:w-8' target='_blank' href="https://tr.pinterest.com/arlanmedya/">
+                <a className='w-14 max-md:w-8' target='_blank' rel="nofollow"  href="https://tr.pinterest.com/arlanmedya/">
                     <img src="logosvg/pinterest.svg" alt="" />
                 </a>
             </div>
