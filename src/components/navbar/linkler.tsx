@@ -47,7 +47,7 @@ export default function NavigationMenuDemo() {
               <ListItem href="/iletisim" rel="canonical" title="İletişim">
                 Bu sayfadan Arlan Medya ile iletişime geçebilirsiniz.
               </ListItem>
-              <ListItem href="#yorumlar" title="Müşteri Yorumlar">
+              <ListItem href="https://www.arlanqrmenu.com/#yorumlar" title="Müşteri Yorumlar">
                 Arlan Medya için Erzrurum qr menü müşteri yorumları.
               </ListItem>
             </ul>
