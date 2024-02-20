@@ -30,7 +30,7 @@ const index = () => {
         </div>
       </div>
       <div className='flex items-center justify-center max-lg:w-[95%] max-lg:mt-10  m-auto max-lg:flex-col max-lg:gap-16 '>
-        <img className='w-[550px]  max-md:object-cover max-md:w-[700px]   rounded-md' src="kucukkoksal.png" alt="qr menü sistemleri" />
+        <img className='w-[550px]  max-md:object-cover max-md:w-[700px]   rounded-md' src="kucukkoksal.webp" alt="qr menü sistemleri" />
       </div>
     </div>
   )

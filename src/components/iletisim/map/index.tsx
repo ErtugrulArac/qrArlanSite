@@ -13,7 +13,7 @@ const index = () => {
                 <h4 className='px-20 max-md:px-0 text-2xl max-md:text-xl font-semibold font-fontpopins '>Arlan Medya ile İletişime Geç</h4>
                 <div className='px-20 max-md:px-0 max-md:text-xs  flex gap-5 items-center'>
                     <Avatar className='size-12'>
-                        <AvatarImage src="yazısız4.png" />
+                        <AvatarImage src="yazısız4.webp" />
                         <AvatarFallback>AR</AvatarFallback>
                     </Avatar>
                     <div className='border-gray-400 border-opacity-80 border py-2 px-2 rounded-lg'>

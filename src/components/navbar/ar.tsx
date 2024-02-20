@@ -21,7 +21,7 @@ export default function HoverCardDemo() {
       <HoverCardContent className="w-80">
         <div className="flex justify-between space-x-4">
           <Avatar>
-            <AvatarImage src="arlan.png" />
+            <AvatarImage src="arlan.webp" />
             <AvatarFallback>AR</AvatarFallback>
           </Avatar>
           <div className="space-y-1">

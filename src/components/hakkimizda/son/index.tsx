@@ -8,7 +8,7 @@ const index = () => {
                 <p className='w-full font-semibold '>Arlan Medya olarak, müşterilerimize çeşitli dijital pazarlama hizmetleri sunuyoruz. Bu hizmetler arasında web tasarımı, sosyal medya yönetimi, dijital reklam kampanyaları, içerik pazarlaması ve SEO (Arama Motoru Optimizasyonu) stratejileri gibi alanlarda uzmanlık bulunmaktadır. Müşterilerimizin ihtiyaçlarına göre özelleştirilmiş çözümler sunarak, işletmelerinin dijital varlıklarını güçlendirmeye ve çevrimiçi başarılarını artırmaya odaklanıyoruz. Müşteri memnuniyetini ve başarısını en üst düzeyde tutarak, her zaman kaliteli ve etkili hizmetler sunmaya çalışıyoruz.</p>
             </div>
             <div className='w-[40%] max-lg:[80%] max-md:w-[95%] m-auto mt-10 '>
-                <img className='rounded-3xl' src="hakmock.jpg" alt="qr mockup" />
+                <img className='rounded-3xl' src="hakmock.webp" alt="qr mockup" />
             </div>
             <div className='w-[40%] max-lg:w-[80%] max-md:w-[95%] flex flex-col gap-7 m-auto mt-14 '>
                 <h3 className='text-4xl font-fontpopins font-bold'>Neden Bizi Seçmelisiniz?</h3>
