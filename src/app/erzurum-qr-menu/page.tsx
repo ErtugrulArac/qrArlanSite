@@ -31,7 +31,7 @@ const page = () => {
                     Erzurum'daki restoranlar için QR menü kullanımı, işletmelerin ve müşterilerin deneyimini modernize edebilir ve geleneksel kağıt menülerin yerini alabilir. QR menüler, müşterilere fiziksel menülere dokunmadan kolayca menüye erişme ve sipariş vermeleri imkanı sağlar. Bu da işletmeler için daha hijyenik bir çözüm sunar ve müşterilerin sağlık ve güvenlik endişelerini azaltır. Ayrıca, QR menülerin dijital formatı, işletmelerin menüyü kolayca güncellemesine olanak tanır ve kağıt israfını azaltır. Bu özellikler, restoran işletmecilerine operasyonel esneklik sağlayarak işletmelerinin verimliliğini artırabilir. Bununla birlikte, QR menü kullanımı için gerekli olan akıllı telefon veya internet erişimi olmayan bazı müşteriler için erişilebilirlik bir zorluk olabilir. Bu durumda, işletmelerin kağıt menü seçeneğini koruması veya alternatif çözümler sunması gerekebilir bunlara kolaylıkla ArlanMedya tarafından sahip olabilirler.
                     </p>
                 </div>
-                <div className='flex flex-col gap-5 '>
+                {/* <div className='flex flex-col gap-5 '>
                     <h3 className='text-4xl font-semibold max-md:text-3xl'>
                         Erzurum Qr Menü Fiyatları
                     </h3>
@@ -70,7 +70,7 @@ const page = () => {
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur commodi est at et eligendi error pariatur aliquid totam beatae, enim quidem nobis neque sit voluptatem accusantium recusandae dicta molestiae iusto!
                     </p>
-                </div>
+                </div> */}
             </div>
         </div>
     )
