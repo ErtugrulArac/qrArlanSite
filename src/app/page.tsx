@@ -10,6 +10,7 @@ import Arka from "@/components/arkaplan/index"
 import Referans from "@/components/referanslar/index"
 import Yorumlar from "@/components/yorumlar/index"
 import Head from "next/head";
+import Referanslar from "@/components/bolgeler/logo"
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <Sorular/>
       <Arka/>
       <Referans/>
+      <Referanslar/>
       <Yorumlar/>
     </div>
 
