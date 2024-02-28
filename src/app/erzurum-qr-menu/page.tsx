@@ -6,9 +6,10 @@ import Telefon from "@/components/bolgeler/telefon"
 const page = () => {
     return (
         <div>
-            <Ust />
+            <Ust header="yarrağımın başı" text="erzurumda qr menu almayanı götten"/>
             <Logo/>
-            <Telefon/>
+            <Telefon header="yarrağımın başı" text="erzurumda qr menu almayanı götten" list={["kuzi", "göt", "keri", "KER KUZE"]} />
+            {/* list 4 TANE OLACAK! */}
         </div>
     )
 }
