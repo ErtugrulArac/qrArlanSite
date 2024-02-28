@@ -17,7 +17,7 @@ const index = () => {
                         <AvatarFallback>AR</AvatarFallback>
                     </Avatar>
                     <div className='border-gray-400 border-opacity-80 border py-2 px-2 rounded-lg'>
-                        <p className='opacity-80 text-sm max-md:text-xs'>Merhaba, Ben Arlan Medya. Yardıma mı ihtiyacınız var? Aşağıdaki formu kullanabilir veya bize  sosyal medya  adreslerimizden bize ulaşabilirsiniz.</p>
+                        <p className='opacity-80 text-sm max-md:text-xs'>Merhaba, Ben Arlan Medya. Yardıma mı ihtiyacınız var? Aşağıdaki formu kullanabilir veya sosyal medya  adreslerimizden bize ulaşabilirsiniz.</p>
                     </div>
                 </div>
                 <Form />
