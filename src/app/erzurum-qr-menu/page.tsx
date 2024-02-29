@@ -43,10 +43,10 @@ const page = () => {
                     </p>
                 </div>
                 <div className='flex flex-col gap-5 '>
-                    <h3 className='text-4xl w-[60%] max-md:w-full font-semibold max-md:text-2xl'>
+                    <h4 className='text-4xl w-[60%] max-md:w-full font-semibold max-md:text-2xl'>
                         QR menüyü özelleştirmek ve güncellemek için hangi olanaklar sunuyorsunuz?
 
-                    </h3>
+                    </h4>
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
                         Marka Uyumluluğu: Erzurum'a özel QR menünüzü, işletmenizin marka kimliğiyle uyumlu hale getirebiliriz. İşletmenizin renkleri, logosu ve genel görünümüyle özelleştirilmiş bir tasarım sağlarız.
                         <br /><br />
@@ -99,17 +99,17 @@ const page = () => {
                     </p>
                 </div>
                 <div className='flex flex-col gap-5 '>
-                    <h4 className='text-4xl max-md:w-full w-[80%] font-semibold max-md:text-2xl'>
+                    <h5 className='text-4xl max-md:w-full w-[80%] font-semibold max-md:text-2xl'>
                         Erzurum'daki restoranlar için QR menü kullanımı, müşteri memnuniyetini nasıl artırabilir?
-                    </h4>
+                    </h5>
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
                         Erzurum'daki restoranlar için QR menü kullanımı, işletmelerin ve müşterilerin deneyimini modernize edebilir ve geleneksel kağıt menülerin yerini alabilir. QR menüler, müşterilere fiziksel menülere dokunmadan kolayca menüye erişme ve sipariş vermeleri imkanı sağlar. Bu da işletmeler için daha hijyenik bir çözüm sunar ve müşterilerin sağlık ve güvenlik endişelerini azaltır. <br /><br /> Ayrıca, QR menülerin dijital formatı, işletmelerin menüyü kolayca güncellemesine olanak tanır ve kağıt israfını azaltır. Bu özellikler, restoran işletmecilerine operasyonel esneklik sağlayarak işletmelerinin verimliliğini artırabilir. Bununla birlikte, QR menü kullanımı için gerekli olan akıllı telefon veya internet erişimi olmayan bazı müşteriler için erişilebilirlik bir zorluk olabilir. Bu durumda, işletmelerin kağıt menü seçeneğini koruması veya alternatif çözümler sunması gerekebilir.
                     </p>
                 </div>
                 <div className='flex flex-col gap-5 '>
-                    <h4 className='text-4xl max-md:w-full w-[80%] font-semibold max-md:text-2xl'>
+                    <h5 className='text-4xl max-md:w-full w-[80%] font-semibold max-md:text-2xl'>
                         Arlanmedya qr menü sistemi ne kadar sürede hazırlanır
-                    </h4>
+                    </h5>
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
                     Arlan Medya olarak, Erzurum QR Menü hizmetimizi hızlı bir şekilde sunuyoruz. QR menünüzü genellikle 3 ila 7 iş günü içinde hazırlayabiliriz. <br /><br /> Bu süre, işletmenizin taleplerine ve QR menüsünün karmaşıklığına bağlı olarak değişebilir. Ancak, müşterilerimize en hızlı ve verimli hizmeti sunmak için elimizden geleni yapıyoruz.
                     </p>
