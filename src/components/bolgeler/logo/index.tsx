@@ -24,7 +24,7 @@ export default function CarouselSpacing() {
           {logolar.map((item) => (
             <CarouselItem key={item.id} className="pl-1 basis-[60%] md:basis-[30%] lg:basis-[15%]">
               <div className="p-1">
-                <img src={item.logo} alt={item.name} />
+                <img  src={item.logo} alt={item.name} />
               </div>
             </CarouselItem>
           ))}
