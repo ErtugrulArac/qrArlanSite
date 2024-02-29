@@ -16,7 +16,7 @@ const page = () => {
             {/* list 4 TANE OLACAK! */}
             <div className='text-white flex flex-col gap-6 w-[80%] max-md:w-[90%] m-auto mt-10'>
                 <div className='flex flex-col gap-5  '>
-                    <h3 className='text-4xl w-[80%] font-semibold max-md:text-3xl'>
+                    <h3 className='text-4xl max-md:w-full w-[80%] font-semibold max-md:text-2xl'>
                         Erzurum qr menü fiyatları?
                     </h3>
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
@@ -24,7 +24,7 @@ const page = () => {
                     </p>
                 </div>
                 <div className='flex flex-col gap-5 '>
-                    <h3 className='text-4xl w-[60%]  max-md:w-full font-semibold max-md:text-3xl '>
+                    <h3 className='text-4xl w-[60%]  max-md:w-full font-semibold max-md:text-2xl '>
                         QR menüsüyle ilgili herhangi bir abonelik veya devamlılık gereksinimi var mı?
                     </h3>
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
@@ -43,7 +43,7 @@ const page = () => {
                     </p>
                 </div>
                 <div className='flex flex-col gap-5 '>
-                    <h3 className='text-4xl w-[60%] font-semibold max-md:text-3xl'>
+                    <h3 className='text-4xl w-[60%] max-md:w-full font-semibold max-md:text-2xl'>
                         QR menüyü özelleştirmek ve güncellemek için hangi olanaklar sunuyorsunuz?
 
                     </h3>
@@ -65,7 +65,7 @@ const page = () => {
                     </p>
                 </div >
                 <div className='flex flex-col gap-5 '>
-                    <h4 className='text-4xl w-[60%] font-semibold max-md:text-3xl'>
+                    <h4 className='text-4xl w-[60%] max-md:w-full font-semibold max-md:text-2xl'>
                         QR menüyü oluşturmak ve yönetmek için teknik bilgi gerekiyor mu, yoksa herkes kolayca kullanabilir mi?
                     </h4>
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
@@ -79,7 +79,7 @@ const page = () => {
                     </p>
                 </div>
                 <div className='flex flex-col gap-5 '>
-                    <h4 className='text-4xl font-semibold max-md:text-3xl'>
+                    <h4 className='text-4xl max-md:w-full  font-semibold max-md:text-2xl'>
                         Arlan Medya QR menüsü tasarımı nasıl yapılır?
                     </h4 >
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
@@ -99,7 +99,7 @@ const page = () => {
                     </p>
                 </div>
                 <div className='flex flex-col gap-5 '>
-                    <h4 className='text-4xl w-[80%] font-semibold max-md:text-3xl'>
+                    <h4 className='text-4xl max-md:w-full w-[80%] font-semibold max-md:text-2xl'>
                         Erzurum'daki restoranlar için QR menü kullanımı, müşteri memnuniyetini nasıl artırabilir?
                     </h4>
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
@@ -107,7 +107,7 @@ const page = () => {
                     </p>
                 </div>
                 <div className='flex flex-col gap-5 '>
-                    <h4 className='text-4xl w-[80%] font-semibold max-md:text-3xl'>
+                    <h4 className='text-4xl max-md:w-full w-[80%] font-semibold max-md:text-2xl'>
                         Arlanmedya qr menü sistemi ne kadar sürede hazırlanır
                     </h4>
                     <p className='w-[70%] max-md:w-full font-semibold opacity-80 text-sm'>
