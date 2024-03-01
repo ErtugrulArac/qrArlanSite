@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Arlan Medya - Qr Menü ",
-  description: "Arlan Medya, işletmelerin dijital dönüşümünde QR menüleriyle etkili çözümler sunuyor. Müşterilerin menülere hızlı erişimini sağlayarak hijyenik ve modern bir deneyim sunuyoruz.",
+  description: "Arlan Medya, işletmelerin dijital dönüşümünde Qr menü çözümleri sunuyor. Qr menünüzle müşterilerinizin menülerinize temassız erişimini mümkün kılıyoruz.",
   authors:[{ name: 'Arlan Medya', url: 'https://www.arlanmedya.com/' }],
   publisher:"Arlan Medya"
 };
