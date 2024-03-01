@@ -5,7 +5,7 @@ const index = () => {
         <div className='foto bg-[#006341] flex justify-between '>
             <img className='max-md:hidden max-lg:hidden' src="genel1.webp" alt="Qrmenü" />
             <div className=' text-white w-full flex flex-col items-center justify-center text-center gap-14 max-md:gap-8  '>
-                <h5 className='text-7xl mt-7 max-md:text-4xl'><b>QR Kod</b> menü</h5>
+                <h5 className='text-7xl mt-7 max-md:text-4xl'><b>Arlan Medya</b> qr menü</h5>
                 <p className='text-sm max-md:w-[70%] max-md:text-[15px] font-semibold'>İşletmenizi güzelleştirecek küçük maliyetli qr menüler</p>
                 <p className='text-9xl font-black font-bebas'>218</p>
                 <p>+ kayıtlı işletme</p>

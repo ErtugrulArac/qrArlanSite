@@ -16,7 +16,7 @@ export default function HoverCardDemo() {
   return (
     <HoverCard>
       <HoverCardTrigger className="text-white" asChild>
-        <Button  variant="link">@<h1>arlanmedya</h1></Button>
+        <Button  variant="link"><h1>Arlan Medya Qr Menü Sistemleri</h1></Button>
       </HoverCardTrigger>
       <HoverCardContent className="w-80">
         <div className="flex justify-between space-x-4">
