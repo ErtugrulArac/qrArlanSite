@@ -120,7 +120,7 @@ export default function AccordionDemo() {
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-7">
-                <AccordionTrigger className="font-bold text-left text-xl max-md:text-base"><h4>QR menülerin sağladığı hijyen ve güvenlik avantajları nelerdir?</h4></AccordionTrigger>
+                <AccordionTrigger className="font-bold text-left text-xl max-md:text-base">QR menülerin sağladığı hijyen ve güvenlik avantajları nelerdir?</AccordionTrigger>
                 <AccordionContent>
                     <p>
                         QR menülerin sağladığı hijyen ve güvenlik avantajları şunlardır:
