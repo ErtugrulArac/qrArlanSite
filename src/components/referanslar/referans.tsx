@@ -7,6 +7,7 @@ const right = () => {
             <div className='bg-[#00af74] h-1 w-[30%]'></div>
             <p className='font-medium text-sm leading-[22px] w-[70%] max-md:w-full'>
                 Müşterilerimiz, bizim için sadece iş yapmak için değil, aynı zamanda birlikte büyüdüğümüz, ortak bir vizyonda birleştiğimiz değerli ortaklardır. Onların memnuniyeti ve güveni her zaman önceliğimiz olmuştur. Her adımda yanlarında olmaktan büyük mutluluk duyuyoruz. </p>
+            <a title='qr menü bilgi' className='w-max px-7 py-2 rounded-xl font-semibold bg-[#00af74] text-white whitespace-nowrap xl:text-lg max-md:text-base mt-3' href="/erzurum-qr-menu">Gözat</a>
 
         </div>
     )
