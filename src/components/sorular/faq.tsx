@@ -11,8 +11,8 @@ export default function AccordionDemo() {
             <AccordionItem className="w-full" value="item-1">
                 <AccordionTrigger className="font-bold text-xl max-md:text-base">Neden Qr Menü kullanmalıyım?</AccordionTrigger>
                 <AccordionContent>
-                    <p>
-                        QR menü, bir işletmenin menüsünü veya ürünlerini QR kodu formatında dijital olarak sunan bir hizmettir. QR kodu, bir akıllı telefon veya tablet gibi mobil cihazlar tarafından taranabilir ve tarandıktan sonra kullanıcıyı bir web sayfasına veya uygulamaya yönlendirir, bu sayede kullanıcılar menüyü kolayca görebilir ve sipariş verebilirler. QR menü kullanarak müşterilerinizin menünüze daha hızlı ve kolay bir şekilde erişmelerini sağlayabilir, aynı zamanda işletmenizin dijital dönüşümünü destekleyebilirsiniz.</p>
+                    
+                        QR menü, bir işletmenin menüsünü veya ürünlerini QR kodu formatında dijital olarak sunan bir hizmettir. QR kodu, bir akıllı telefon veya tablet gibi mobil cihazlar tarafından taranabilir ve tarandıktan sonra kullanıcıyı bir web sayfasına veya uygulamaya yönlendirir, bu sayede kullanıcılar menüyü kolayca görebilir ve sipariş verebilirler. QR menü kullanarak müşterilerinizin menünüze daha hızlı ve kolay bir şekilde erişmelerini sağlayabilir, aynı zamanda işletmenizin dijital dönüşümünü destekleyebilirsiniz.
                 </AccordionContent>
             </AccordionItem>
 
@@ -21,7 +21,7 @@ export default function AccordionDemo() {
             <AccordionItem value="item-5">
                 <AccordionTrigger className="font-bold text-left text-xl max-md:text-base">QR menülerin sosyal medya stratejileriyle nasıl entegre edilebilir?</AccordionTrigger>
                 <AccordionContent>
-                    <p>
+                    
                         QR menülerin sosyal medya stratejileriyle entegrasyonu, işletmenizin dijital varlığını güçlendirmek ve sosyal medya etkileşimini artırmak için harika bir fırsattır. İşte QR menülerinizi sosyal medya stratejileriyle nasıl entegre edebileceğinizin bazı yolları:
                         <br /><br />
                         Sosyal Medya Hesaplarında Paylaşım: QR kodunu işletmenizin Facebook, Instagram, Twitter veya diğer sosyal medya platformlarındaki hesaplarınızda paylaşın. Bu, takipçilerinizin menünüze kolayca erişmesini sağlar.
@@ -37,13 +37,13 @@ export default function AccordionDemo() {
                         Sosyal Medya Profil Bağlantılarına Eklemek: İşletmenizin sosyal medya profillerinde QR koduna doğrudan erişim sağlayacak bağlantılar ekleyin. Bu, profil ziyaretçilerinin QR kodunu hemen tarayarak menünüze erişmelerini sağlar.
                         <br /><br />
                         Bu stratejiler, QR menülerinizi sosyal medya ile entegre etmenin yalnızca birkaç örneğidir. Sosyal medyanın işletmenizin görünürlüğünü artırması ve müşteri etkileşimini artırması açısından QR menülerinizi sosyal medya stratejilerinizle birleştirmek önemlidir.
-                    </p>
+                    
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-6">
                 <AccordionTrigger className="font-bold text-left text-xl max-md:text-base">QR kodunu nasıl tararım ve menüye nasıl erişirim?</AccordionTrigger>
                 <AccordionContent>
-                    <p>
+                    
                         QR kodunu tarayarak menüye erişmek oldukça basittir. İşte adım adım nasıl yapılacağı:
                         <br /><br />
                         Mobil Cihazınızı Hazırlayın: QR kodunu tarayabilmek için bir akıllı telefon veya tablet kullanmanız gerekmektedir. QR kodunu tarayabilecek bir QR kod tarayıcı uygulaması indirmeniz veya cihazınızın kamerasını kullanarak QR kodunu tarayabilecek bir tarayıcıya sahip olmanız gerekmektedir.
@@ -53,13 +53,13 @@ export default function AccordionDemo() {
                         Menüye Erişin: QR kodu tarandıktan sonra, genellikle cihazınız size bir bağlantı veya web adresi gösterecektir. Bu bağlantıya veya web adresine tıkladığınızda, tarayıcınız menüye veya ilgili içeriğe otomatik olarak yönlendirilecektir. Böylece, işletmenin menüsüne veya ilgili dijital içeriğe kolayca erişmiş olursunuz.
                         <br /><br />
                         QR kodunu taradığınızda herhangi bir sorunla karşılaşırsanız, işletmenin çalışanlarından veya destek ekibinden yardım isteyebilirsiniz.
-                    </p>
+                    
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-7">
                 <AccordionTrigger className="font-bold text-left text-xl max-md:text-base">QR menülerin sağladığı hijyen ve güvenlik avantajları nelerdir?</AccordionTrigger>
                 <AccordionContent>
-                    <p>
+                    
                         QR menülerin sağladığı hijyen ve güvenlik avantajları şunlardır:
                         <br /><br />
 
@@ -79,7 +79,7 @@ export default function AccordionDemo() {
                         <br /><br />
 
                         Bu avantajlar, QR menülerin hijyen ve güvenlik açısından sağladığı önemli faydalardan sadece birkaçıdır. Bu nedenle, birçok restoran ve işletme, QR menülerin kullanımını artırarak müşteri güvenini ve memnuniyetini artırmayı hedeflemektedir.
-                    </p>
+                    
                 </AccordionContent>
             </AccordionItem>
         </Accordion>
