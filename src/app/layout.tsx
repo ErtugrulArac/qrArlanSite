@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer/index"
 import Wp from "@/components/wp"
+import Script from 'next/script'
 
 
 
@@ -23,6 +24,18 @@ export default function RootLayout({
 }>) {
   return (
     <html className="!scroll-smooth" lang="tr">
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-GK6W4YENV3"></Script>
+        <Script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-GK6W4YENV3');
+          `}
+        </Script>
+      </head>
       <body className="bg-black">
         <main className="font-fontum bg-black">
         <Wp />
