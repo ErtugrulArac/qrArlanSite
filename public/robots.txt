@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /dashboardUsers
+
+# Host
+Host: https://www.arlanqrmenu.com
+
+# Sitemaps
+Sitemap: https://www.arlanqrmenu.com/sitemap.xml

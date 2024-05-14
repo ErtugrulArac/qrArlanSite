@@ -1,21 +1,47 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer/index"
 import Wp from "@/components/wp"
 import Script from 'next/script'
 
-
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Arlan Medya - Qr Menü ",
-  description: "Arlan Medya, işletmelerin dijital dönüşümünde Qr menü çözümleri sunuyor. Qr menünüzle müşterilerinizin menülerinize temassız erişimini mümkün kılıyoruz.",
-  authors:[{ name: 'Arlan Medya', url: 'https://www.arlanmedya.com/' }],
-  publisher:"Arlan Medya"
+const meta = {
+  title: 'Arlan Medya - Qr Menü',
+  description: 'Arlan Medya, işletmelerin dijital dönüşümünde Qr menü çözümleri sunuyor. Qr menünüzle müşterilerinizin menülerinize temassız erişimini mümkün kılıyoruz.',
+  cardImage: '/og.png',
+  favicon: '/favicon.ico',
+  url: "https://www.arlanqrmenu.com"
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: meta.title,
+    description: meta.description,
+    robots: 'index, follow',
+    referrer: 'origin-when-cross-origin',
+    authors: [{ name: 'arlanmedya', url: 'arlanmedya.com' }],
+    creator: 'arlanmedya',
+    publisher: 'Arlanmedya',
+    icons: { icon: meta.favicon },
+    metadataBase: new URL(meta.url),
+    openGraph: {
+      url: meta.url,
+      title: meta.title,
+      description: meta.description,
+      images: [meta.cardImage],
+      type: 'website',
+      siteName: meta.title
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@Arlanmedya',
+      creator: '@Arlanmedya',
+      title: meta.title,
+      description: meta.description,
+      images: [meta.cardImage]
+    }
+  };
+}
 
 export default function RootLayout({
   children,
