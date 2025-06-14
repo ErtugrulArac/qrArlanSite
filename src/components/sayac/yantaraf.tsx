@@ -1,30 +1,72 @@
-import React, { use } from 'react'
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
+"use client";
 
-const yantaraf = () => {
-    const [ref, inView] = useInView({
-        triggerOnce: true, // Sadece bir kez tetikle
-    });
-    return (
-        <div ref={ref}>
-            <div className='text-white text-center   '>
-                <p className='font-extrabold font-fontum text-4xl text-[#8b38cb]'>{inView && <CountUp prefix='₺' duration={4} end={7900} />}</p>
-                <p className='font-light opacity-70 mt-5 tracking-wider max-md:text-xs max-md:mb-4'>Yıllık ortalama ₺7900 basım maliyeti tasarrufu </p>
-                <div className='h-[1px] w-[500px] bg-white mt-4 opacity-70 max-md:w-[98%] max-md:m-auto'></div>
-            </div>
-            <div className='text-white text-center mt-10    '>
-                <p className='font-extrabold  font-fontum text-4xl text-[#8b38cb]'>{inView && <CountUp prefix='%' duration={4} end={26} />}</p>
-                <p className='font-light opacity-70 mt-5 tracking-wider w-[500px] max-md:text-xs max-md:w-[300px]  max-md:mb-4'>Müşterilerin kendilerinin sipariş vermesine olanak tanıyarak masa cirosunu %26 artışı </p>
-                <div className='h-[1px] w-[500px] bg-white mt-4 opacity-70 max-md:w-[98%] max-md:m-auto'></div>
-            </div>
-            <div className='text-white text-center mt-10   '>
-                <p className='font-extrabold font-fontum text-4xl text-[#8b38cb]'>{inView && <CountUp prefix='%' duration={4} end={17} />}</p>
-                <p className='font-light opacity-70 mt-5 tracking-wider w-[500px] max-md:text-xs max-md:w-[300px]  max-md:mb-4'>Qr Menü sayesinde siparişlerinizi %17 artırın ve daha fazla gelir elde edin </p>
-                <div className='h-[1px] w-[500px] bg-white mt-4 opacity-70 max-md:w-[98%] max-md:m-auto '></div>
-            </div>
-        </div>
-    )
-}
+import React from "react";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
-export default yantaraf
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.5, // Her çocuk animasyonu 0.5 saniye arayla başlar
+    },
+  },
+};
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 1.5 } },
+};
+
+const stats = [
+  {
+    id: 1,
+    prefix: "₺",
+    value: 7900,
+    description: "Yıllık ortalama ₺7900 basım maliyeti tasarrufu",
+  },
+  {
+    id: 2,
+    prefix: "%",
+    value: 26,
+    description:
+      "Müşterilerin kendilerinin sipariş vermesine olanak tanıyarak masa cirosunu %26 artırır",
+  },
+  {
+    id: 3,
+    prefix: "%",
+    value: 17,
+    description:
+      "Qr Menü sayesinde siparişlerinizi %17 artırın ve daha fazla gelir elde edin",
+  },
+];
+
+const Yantaraf = () => {
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  return (
+    <motion.div
+      ref={ref}
+      className="flex flex-col gap-8 max-w-md w-full"
+      variants={containerVariants}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+    >
+      {stats.map(({ id, prefix, value, description }) => (
+        <motion.div
+          key={id}
+          className="bg-[#121212] rounded-xl p-6 text-center shadow-lg"
+          variants={fadeInUp}
+        >
+          <p className="text-4xl font-extrabold text-green-500">
+            {inView && <CountUp prefix={prefix} end={value} duration={5} />}
+          </p>
+          <p className="mt-3 text-white opacity-80">{description}</p>
+        </motion.div>
+      ))}
+    </motion.div>
+  );
+};
+
+export default Yantaraf;

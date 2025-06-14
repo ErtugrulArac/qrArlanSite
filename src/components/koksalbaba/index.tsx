@@ -1,39 +1,80 @@
-import React from 'react'
+"use client";
 
+import React from "react";
+import { motion } from "framer-motion";
 
-const index = () => {
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { ease: "easeOut", duration: 0.8 } 
+  },
+};
+
+const buttonHover = {
+  scale: 1.05,
+  transition: { duration: 0.3, ease: "easeInOut" },
+};
+
+const Index = () => {
   return (
-    <div id='inceleyin' className='scroll-mt-[100px] flex justify-center items-center w-[60%] m-auto mt-20 max-lg:flex-col max-lg:w-full max-xl:w-[90%]'>
-      <div className=' flex items-center justify-center    m-auto max-lg:flex-col max-lg:gap-16 max-lg:w-[70%] '>
-        <div className='flex flex-col gap-10 max-md:gap-6'>
-          <h2 className='text-white font-fontpopins text-4xl w-[80%] font-extrabold max-lg:text-3xl max-xl:text-3xl  max-md:text-2xl max-lg:w-full'>İşletmenize Özel Qr Menü Oluşturmanın Adımları</h2>
-          <ul className='flex flex-col gap-3 mt-7 text-white'>
-            <li className='flex items-center gap-2'>
-              <img className='max-md:size-5 ' src="koksal.svg" alt="qr menü teması" /> <p className='text-xl font-medium  tracking-wide opacity-80 max-xl:text-lg max-md:text-base'>İşletmenize en uygun qr menu temasını seçin.</p>
+    <motion.div 
+      id="inceleyin"
+      className="scroll-mt-[100px] max-w-[1200px] w-full px-4 mx-auto flex flex-col lg:flex-row items-center justify-between gap-10 mt-20"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={fadeInUp}
+    >
+      <motion.div 
+        className="flex-1 min-w-[280px]"
+        variants={fadeInUp}
+      >
+        <h2 className="text-white font-fontpopins text-4xl font-extrabold mb-6 max-lg:text-3xl max-md:text-2xl">
+          İşletmenize Özel <strong>Qr Menü</strong> Oluşturmanın Adımları
+        </h2>
+        <ul className="flex flex-col gap-4 text-white text-lg max-md:text-base">
+          {[
+            "İşletmenize en uygun qr menu temasını seçin.",
+            "Seçtiğiniz qr teması ile birlikte kolayca bizle iletişime geçin.",
+            "Qr menü için gerekli işletme bilgilerini iletin.",
+            "Qr menü entegrasyonu için menünüzü iletin.",
+            "Qr kod tasarımını seçtikten sonra her şey hazır.",
+          ].map((text, i) => (
+            <li key={i} className="flex items-center gap-3">
+              <img
+                className="w-6 h-6 max-md:w-5 max-md:h-5"
+                src="koksal.svg"
+                alt="qr menü ikon"
+              />
+              <span className="opacity-80">{text}</span>
             </li>
-            <li className='flex items-center gap-2'>
-              <img className='max-md:size-5' src="koksal.svg" alt="qr menü iletişim" /> <p className='text-xl font-medium  tracking-wide opacity-80 max-xl:text-lg max-md:text-base'>Seçtiğiniz qr teması ile birlikte kolayca bizle iletişime geçin.</p>
-            </li>
-            <li className='flex items-center gap-2'>
-              <img className='max-md:size-5' src="koksal.svg" alt="qr menü işletme hesabı" /> <p className='text-xl font-medium  tracking-wide opacity-80 max-xl:text-lg max-md:text-base'>Qr menü için gerekli işletme bilgilerini iletin.</p>
+          ))}
+        </ul>
+        <motion.a
+          whileHover={buttonHover}
+          whileTap={{ scale: 0.95 }}
+          title="qr menü bilgi"
+          className="inline-block mt-6 px-8 py-3 rounded-xl font-semibold bg-[#8b38cb] text-white whitespace-nowrap text-lg max-md:text-base"
+          href="/iletisim"
+        >
+          şimdi bilgi alın
+        </motion.a>
+      </motion.div>
 
-            </li>
-            <li className='flex items-center gap-2'>
-              <img className='max-md:size-5' src="koksal.svg" alt="qr menü entegrasyon" /> <p className='text-xl font-medium  tracking-wide opacity-80 max-xl:text-lg max-md:text-base'>Qr menü entegrasyonu için menünüzü iletin.</p>
-            </li>
-            <li className='flex items-center gap-2'>
-              <img className='max-md:size-5' src="koksal.svg" alt="qr menü hazır" /> <p className='text-xl font-medium tracking-wide opacity-80 max-xl:text-lg max-md:text-base'>Qr kod tasarımını seçtikten sonra her şey hazır.</p>
+      <motion.div
+        className="flex-1 min-w-[280px] flex justify-center"
+        variants={fadeInUp}
+      >
+        <img
+          className="rounded-md w-full max-w-[550px] object-cover"
+          src="kucukkoksal.webp"
+          alt="qr menü sistemleri"
+        />
+      </motion.div>
+    </motion.div>
+  );
+};
 
-            </li>
-          </ul>
-          <a title='qr menü bilgi' className='w-max px-7 py-2 rounded-xl font-semibold bg-[#8b38cb] text-white whitespace-nowrap xl:text-lg max-md:text-base mt-3' href="/iletisim">şimdi bilgi alın</a>
-        </div>
-      </div>
-      <div className='flex items-center justify-center max-lg:w-[95%] max-lg:mt-10  m-auto max-lg:flex-col max-lg:gap-16 '>
-        <img className='w-[550px]  max-md:object-cover max-md:w-[700px]   rounded-md' src="kucukkoksal.webp" alt="qr menü sistemleri" />
-      </div>
-    </div>
-  )
-}
-
-export default index
+export default Index;
