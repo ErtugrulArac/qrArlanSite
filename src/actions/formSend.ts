@@ -2,7 +2,6 @@
 
 import * as z from 'zod';
 import { LoginSchema } from '@/schemas';
-import { prisma } from '@/utils/connect';
 
 export const sendForm = async (values: z.infer<typeof LoginSchema>) => {
     const validatedFileds  = LoginSchema.safeParse(values);
@@ -13,25 +12,20 @@ export const sendForm = async (values: z.infer<typeof LoginSchema>) => {
 
     const { email, name, text } = validatedFileds.data;
 
-    const emailExits = await prisma.message.findFirst({
-        where: {
-            email
-        }
-    });
-
-    if (emailExits) {
-        return { error: "Bu email adresi ile daha önce mesaj gönderilmiş." };
-    }
-
     try {
-        await prisma.message.create({
-            data: {
-                email,
-                name,
-                text
-            }
-        });
-        return { success: "Mesajınız başarıyla gönderildi." };
+        // WhatsApp mesajı hazırla
+        const phoneNumber = "905307464899";
+        const message = `*Yeni Müşteri Temsilcisi Sorgusu*\n\n*İsim:* ${name}\n*Email:* ${email}\n*Mesaj:* ${text}`;
+        const encodedMessage = encodeURIComponent(message);
+        
+        // WhatsApp API'ye gönder (wa.me linki oluştur - müşteri temsilcisine manuel açılması için)
+        // İsteğe bağlı: Gerçek WhatsApp API entegrasyonu için webhook kuşulabilir
+        
+        // Başarı dönüş
+        return { 
+            success: "Mesajınız başarıyla gönderildi! Müşteri temsilcisi kısa sürede sizinle iletişime geçecektir.",
+            whatsappLink: `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+        };
     } catch (error) {
         return { error: "Bir hata oluştu. Lütfen tekrar deneyin."}
     }

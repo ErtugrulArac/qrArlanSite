@@ -66,77 +66,108 @@ const page = () => {
     
     return (
         <>
-            {success ? <div className='bg-green-500 w-[50%] m-auto font-semibold max-md:text-sm max-md:w-[70%] text-white p-3 rounded-lg text-center'>Mesajınız başarıyla gönderildi! Ekibimiz dönüş yapacaktır.</div> :
-            <div className=' rounded-lg  gap-7 flex flex-col text-white px-20 max-md:px-2 max-md:py-3  max-md:mb-3'>
-                <Form {...form}>
-                    <form
-                        onSubmit={form.handleSubmit(onSubmit)}
-                        className='space-y-4'
-                    >
-                        <div className='space-y-4'>
-                            <FormField
-                                control={form.control}
-                                name='name'
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormLabel>İsim</FormLabel>
-                                        <FormControl>
-                                            <Input
-                                                className='py-5 placeholder:text-white placeholder:opacity-85'
-                                                {...field}
-                                                disabled={isPending}
-                                                placeholder='ahmet teke'
-                                                type='text'
-                                            />
-                                        </FormControl>
-                                        <FormMessage />
-                                    </FormItem>
-                                )} />
-                            <FormField
-                                control={form.control}
-                                name='email'
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormLabel>Email</FormLabel>
-                                        <FormControl>
-                                            <Input
-                                                className='py-5 placeholder:text-white placeholder:opacity-85 bg-transparent'
-                                                {...field}
-                                                disabled={isPending}
-                                                placeholder='ahmet.teke@example.com'
-                                                type='email'
-                                                autoComplete='email'
-                                            />
-                                        </FormControl>
-                                        <FormMessage />
-                                    </FormItem>
-                                )} />
-                            <FormField
-                                control={form.control}
-                                name='text'
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormLabel>Mesajınız</FormLabel>
-                                        <FormControl>
-                                            <Textarea
-                                                {...field}
-                                                className='py-5 placeholder:text-white placeholder:opacity-85'
-                                                disabled={isPending}
-                                                placeholder='Mesajınızı buraya yazınız..'
-                                            />
-                                        </FormControl>
-                                        <FormMessage />
-                                    </FormItem>
-                                )} />
+            {success ? (
+                <div className='fixed inset-0 flex items-center justify-center z-50'>
+                    <div className='bg-gradient-to-br from-green-500 to-emerald-600 w-[90%] sm:w-[50%] font-semibold text-white p-6 rounded-xl text-center shadow-2xl border border-green-400/30 animate-in fade-in zoom-in duration-300'>
+                        <div className='flex justify-center mb-3'>
+                            <div className='bg-white/20 rounded-full p-3'>
+                                <svg className='w-6 h-6 text-white' fill='currentColor' viewBox='0 0 20 20'>
+                                    <path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clipRule='evenodd'></path>
+                                </svg>
+                            </div>
                         </div>
-                        {error && <div className='bg-red-500 w-full p-3 rounded-lg text-center'>{error}</div>}
-                        <Button className='w-full bg-white hover:bg-gray-300  text-black flex gap-3' disabled={isPending}>
-                            Gönder <img className='size-6' src="send.svg" alt="mail qr menü" />
-                        </Button>
-                    </form>
-                </Form>
-            </div>
-            }
+                        <p className='text-lg font-semibold'>Mesajınız başarıyla gönderildi!</p>
+                        <p className='text-sm text-white/90 mt-2'>Müşteri temsilcisi kısa sürede sizinle WhatsApp üzerinden iletişime geçecektir.</p>
+                    </div>
+                </div>
+            ) : (
+                <div className='rounded-2xl gap-8 flex flex-col text-white px-6 sm:px-12 lg:px-20 py-8 sm:py-10 bg-gradient-to-br from-slate-800/40 to-slate-900/40 backdrop-blur-sm border border-slate-700/50'>
+                    <div className='space-y-2'>
+                        <h3 className='text-3xl sm:text-4xl font-bold bg-gradient-to-r from-purple-400 via-purple-300 to-indigo-400 bg-clip-text text-transparent'>Müşteri Temsilcisi</h3>
+                        <p className='text-gray-300 text-sm sm:text-base leading-relaxed'>Formu doldurun, ekibimiz size WhatsApp üzerinden kısa sürede dönüş yapacaktır.</p>
+                    </div>
+                    <Form {...form}>
+                        <form
+                            onSubmit={form.handleSubmit(onSubmit)}
+                            className='space-y-5'
+                        >
+                            <div className='space-y-5'>
+                                <FormField
+                                    control={form.control}
+                                    name='name'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel className='text-sm font-semibold text-gray-200'>İsim Soyisim</FormLabel>
+                                            <FormControl>
+                                                <Input
+                                                    className='py-3 px-4 bg-slate-700/50 border border-slate-600/50 rounded-lg focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 focus:bg-slate-700/80 placeholder:text-gray-400 placeholder:opacity-70 transition-all duration-200'
+                                                    {...field}
+                                                    disabled={isPending}
+                                                    placeholder='Ahmet Teke'
+                                                    type='text'
+                                                />
+                                            </FormControl>
+                                            <FormMessage className='text-red-400 text-sm' />
+                                        </FormItem>
+                                    )} />
+                                <FormField
+                                    control={form.control}
+                                    name='email'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel className='text-sm font-semibold text-gray-200'>Email Adresi</FormLabel>
+                                            <FormControl>
+                                                <Input
+                                                    className='py-3 px-4 bg-slate-700/50 border border-slate-600/50 rounded-lg focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 focus:bg-slate-700/80 placeholder:text-gray-400 placeholder:opacity-70 transition-all duration-200'
+                                                    {...field}
+                                                    disabled={isPending}
+                                                    placeholder='ahmet.teke@example.com'
+                                                    type='email'
+                                                    autoComplete='email'
+                                                />
+                                            </FormControl>
+                                            <FormMessage className='text-red-400 text-sm' />
+                                        </FormItem>
+                                    )} />
+                                <FormField
+                                    control={form.control}
+                                    name='text'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel className='text-sm font-semibold text-gray-200'>Mesajınız</FormLabel>
+                                            <FormControl>
+                                                <Textarea
+                                                    {...field}
+                                                    className='py-3 px-4 bg-slate-700/50 border border-slate-600/50 rounded-lg focus:border-purple-500/50 focus:ring-2 focus:ring-purple-500/20 focus:bg-slate-700/80 placeholder:text-gray-400 placeholder:opacity-70 transition-all duration-200 resize-none min-h-[120px]'
+                                                    disabled={isPending}
+                                                    placeholder='Detaylı mesajınızı buraya yazınız...'
+                                                />
+                                            </FormControl>
+                                            <FormMessage className='text-red-400 text-sm' />
+                                        </FormItem>
+                                    )} />
+                            </div>
+                            {error && (
+                                <div className='bg-red-500/15 border border-red-500/50 text-red-300 w-full p-3 sm:p-4 rounded-lg text-sm sm:text-base text-center'>
+                                    {error}
+                                </div>
+                            )}
+                            <button 
+                                type='submit'
+                                disabled={isPending}
+                                className='w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 disabled:from-slate-600 disabled:to-slate-700 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-3 transition-all duration-200 hover:shadow-lg hover:shadow-purple-500/20'
+                            >
+                                <span>{isPending ? 'Gönderiliyor...' : 'Mesajı Gönder'}</span>
+                                {!isPending && (
+                                    <svg className='w-5 h-5' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                                        <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 19l9 2-9-18-9 18 9-2zm0 0v-8' />
+                                    </svg>
+                                )}
+                            </button>
+                        </form>
+                    </Form>
+                </div>
+            )}
         </>
     )
 }

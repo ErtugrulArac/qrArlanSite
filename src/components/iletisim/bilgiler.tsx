@@ -21,7 +21,7 @@ const bilgiler = () => {
                         { name: 'Instagram', icon: 'logosvg/ınstagram.svg', url: 'https://www.instagram.com/arlanmedya/', color: 'from-pink-500 to-purple-500' },
                         { name: 'Facebook', icon: 'logosvg/facebook.svg', url: 'https://www.facebook.com/profile.php?id=61552451652567&paipv=0&eav=Afazva3lQXsO8wlU165om_7H6NcrVX-jTE6xkmllfgDo-svhTgWjynqU3FpaGMYRFdo', color: 'from-blue-600 to-blue-400' },
                         { name: 'LinkedIn', icon: 'logosvg/linkedn.svg', url: 'https://www.linkedin.com/company/arlan-medya', color: 'from-blue-700 to-cyan-600' },
-                        { name: 'X', icon: 'logosvg/x.svg', url: 'https://twitter.com/arlanmedya', color: 'from-gray-800 to-black' },
+                        { name: 'X', icon: 'logosvg/x.svg', url: 'https://twitter.com/arlanmedya', color: 'from-gray-300 to-gray-400' },
                         { name: 'YouTube', icon: 'logosvg/youtube.svg', url: 'https://www.youtube.com/@ArlanMedya', color: 'from-red-600 to-red-500' },
                         { name: 'Pinterest', icon: 'logosvg/pinterest.svg', url: 'https://tr.pinterest.com/arlanmedya/', color: 'from-red-700 to-orange-500' },
                     ].map((social, i) => (
@@ -51,7 +51,6 @@ const bilgiler = () => {
                         </div>
                         <h3 className='text-white font-bold mb-2'>Telefonla Arayın</h3>
                         <p className='text-gray-400'>+90 530 746 4899</p>
-                        <p className='text-gray-400'>+90 544 782 4655</p>
                     </div>
                     <div className='text-center'>
                         <div className='w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4'>

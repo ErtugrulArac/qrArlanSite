@@ -27,71 +27,71 @@ const item = {
 const Son = () => {
   return (
     <motion.div
-      className="flex flex-col md:flex-row justify-around items-center max-md:mb-4 mt-12 gap-4"
+      className="flex flex-col md:flex-row justify-between items-center max-md:mb-4 py-8 gap-6 max-w-6xl mx-auto px-4 sm:px-6"
       variants={container}
       initial="hidden"
       animate="visible"
     >
       <motion.a
-        title="Arlan Medya Qr menü sistemleri"
+        title="Arlan Medya QR Menü Sistemleri"
         href="/"
-        className="cursor-pointer"
+        className="cursor-pointer hover:opacity-80 transition-opacity"
         variants={item}
       >
         <img
-          className="w-24 max-md:hidden"
+          className="w-28 max-md:w-24 max-md:block"
           src="logobeyaz.webp"
-          alt="Arlan Qr Menü Sistemleri"
+          alt="Arlan QR Menü Sistemleri"
         />
       </motion.a>
 
       <motion.p
-        className="max-md:text-xs text-center md:text-left"
+        className="max-md:text-xs text-center md:text-left text-gray-400 text-sm"
         variants={item}
       >
-        copyright{" "}
+        <span className="text-gray-300">© 2021-2025</span>{" "}
         <Link
           target="_blank"
           title="Arlan Medya"
           rel="nofollow"
           href="https://www.arlanmedya.com/"
-          className="font-semibold hover:text-[#00af74] transition-colors"
+          className="font-semibold text-white hover:text-purple-400 transition-colors"
         >
           Arlan Medya
         </Link>{" "}
-        © 2021 Tüm Hakları Saklıdır.
+        <span className="text-gray-300">Tüm Hakları Saklıdır.</span>
       </motion.p>
 
       <motion.div
-        className="flex max-md:hidden items-center justify-center gap-6"
+        className="flex items-center justify-center gap-4"
         variants={item}
       >
         <a
-          title="erzurum qr menü"
-          className="border p-2 rounded-full hover:bg-[#00af74] hover:text-white transition-colors"
+          title="Arlan Medya Facebook"
+          className="bg-gradient-to-br from-blue-600/20 to-blue-500/20 border border-blue-500/30 p-3 rounded-full hover:from-blue-600/40 hover:to-blue-500/40 hover:border-blue-500/60 transition-all duration-300 hover:scale-110"
           target="_blank"
           rel="nofollow"
           href="https://www.facebook.com/profile.php?id=61552451652567&paipv=0&eav=Afazva3lQXsO8wlU165om_7H6NcrVX-jTE6xkmllfgDo-svhTgWjynqU3FpaGMYRFdo"
         >
-          <FaFacebookF />
+          <FaFacebookF className="text-blue-400" />
         </a>
         <a
-          title="erzurum qr menü sistem"
-          className="border p-2 rounded-full hover:bg-[#00af74] hover:text-white transition-colors"
+          title="Arlan Medya LinkedIn"
+          className="bg-gradient-to-br from-blue-700/20 to-blue-600/20 border border-blue-500/30 p-3 rounded-full hover:from-blue-700/40 hover:to-blue-600/40 hover:border-blue-500/60 transition-all duration-300 hover:scale-110"
           target="_blank"
           rel="nofollow"
           href="https://www.linkedin.com/company/arlan-medya"
         >
-          <FaLinkedinIn />
+          <FaLinkedinIn className="text-blue-300" />
         </a>
         <a
-          title="erzurum qr menü sistemleri"
-          className="border p-2 rounded-full hover:bg-[#00af74] hover:text-white transition-colors"
+          title="Arlan Medya Instagram"
+          className="bg-gradient-to-br from-pink-600/20 to-purple-600/20 border border-pink-500/30 p-3 rounded-full hover:from-pink-600/40 hover:to-purple-600/40 hover:border-pink-500/60 transition-all duration-300 hover:scale-110"
           target="_blank"
           rel="nofollow"
           href="https://www.instagram.com/arlanmedya/"
         >
-          <FaInstagram />
+          <FaInstagram className="text-pink-400" />
         </a>
       </motion.div>
     </motion.div>
