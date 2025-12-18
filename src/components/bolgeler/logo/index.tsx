@@ -33,21 +33,23 @@ const itemVariants = {
 export default function CarouselSpacing() {
   return (
     <div className="relative flex justify-center items-center w-full bg-white py-24 px-4 sm:px-6 md:px-12 lg:px-16 overflow-hidden">
-      <Carousel
-        plugins={[
-          Autoplay({
-            delay: 3500,
-          }),
-        ]}
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
         className="relative z-10 w-full max-w-[90%] max-sm:w-[90%] max-lg:w-[80%]"
       >
-        <CarouselContent
-          as={motion.div}
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-          className="-ml-1 flex gap-6 justify-center"
+        <Carousel
+          plugins={[
+            Autoplay({
+              delay: 3500,
+            }),
+          ]}
+          className="w-full"
         >
+          <CarouselContent
+            className="-ml-1 flex gap-6 justify-center"
+          >
           {logolar.map((item) => (
             <CarouselItem
               key={item.id}
@@ -74,7 +76,8 @@ export default function CarouselSpacing() {
             </CarouselItem>
           ))}
         </CarouselContent>
-      </Carousel>
+        </Carousel>
+      </motion.div>
     </div>
   );
 }

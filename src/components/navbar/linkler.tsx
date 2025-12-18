@@ -66,8 +66,7 @@ const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
   ({ className, title, children, ...props }, ref) => (
     <li>
       <NavigationMenuLink asChild>
-        <motion.a 
-          whileHover={{ x: 5 }}
+        <a 
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-slate-800/50 hover:text-white focus:bg-slate-800/50 focus:text-white text-gray-300",
@@ -79,7 +78,7 @@ const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
           <p className="line-clamp-2 text-sm leading-snug text-gray-400">
             {children}
           </p>
-        </motion.a>
+        </a>
       </NavigationMenuLink>
     </li>
   )
