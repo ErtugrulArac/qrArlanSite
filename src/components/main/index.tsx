@@ -6,7 +6,7 @@ import Typ from "@/components/main/typeanimation";
 
 const Index = () => {
   return (
-    <div className="mt-16 pt-6 sm:pt-10 md:pt-16 py-10 flex justify-center items-center relative xl:mt-36">
+    <div className="mt-16 pt-16 sm:pt-20 md:pt-28 lg:pt-12 py-10 flex justify-center items-center relative xl:mt-36">
       <motion.div
         className="max-xl:hidden"
         initial={{ opacity: 0, scale: 0.9 }}

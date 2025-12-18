@@ -179,6 +179,19 @@ export default function QRDemoLanding() {
                 <span className="relative text-center">🏪 İşletmeci Paneli</span>
               </motion.a>
             </div>
+
+            {/* Admin Panel Info Note */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              className="mt-12 text-center"
+            >
+              <p className="text-gray-400 text-sm sm:text-base">
+                <span className="font-semibold text-white">Admin Panel Şifresi:</span>{" "}
+                <code className="bg-slate-800 text-cyan-400 px-3 py-1 rounded text-sm font-mono font-bold">admin123</code>
+              </p>
+            </motion.div>
           </div>
         </motion.div>
 
