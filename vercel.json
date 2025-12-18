@@ -2,5 +2,13 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "nodeVersion": "24.x"
+  "nodeVersion": "24.x",
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "nodejs24.x"
+    }
+  },
+  "env": {
+    "NODEJS_VERSION": "24"
+  }
 }
