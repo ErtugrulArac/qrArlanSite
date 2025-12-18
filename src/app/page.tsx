@@ -9,6 +9,7 @@ import Sorular from "@/components/sorular/index"
 import Arka from "@/components/arkaplan/index"
 import Referans from "@/components/referanslar/index"
 import Yorumlar from "@/components/yorumlar/index"
+import QRMenuShowcase from "@/components/demo/showcase"
 import Head from "next/head";
 import Referanslar from "@/components/bolgeler/logo"
 
@@ -20,6 +21,8 @@ export default function Home() {
         <link rel="canonical" href="https://www.arlanqrmenu.com/" />
       </Head>
       <Main />
+      <QRMenuShowcase />
+      
       <Ozellik />
       <Koksal />
       <Sayac />

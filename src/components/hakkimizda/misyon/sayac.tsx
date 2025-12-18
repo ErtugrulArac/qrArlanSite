@@ -2,26 +2,42 @@
 import React from 'react'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 const yantaraf = () => {
     const [ref, inView] = useInView({
-        triggerOnce: true, // Sadece bir kez tetikle
+        triggerOnce: true,
     });
+
+    const StatItem = ({ value, label, suffix = '' }: { value: number; label: string; suffix?: string }) => (
+        <motion.div
+            className='flex flex-col gap-3 items-center'
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+        >
+            <p className='text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent'>
+                {inView && <CountUp duration={3} end={value} suffix={suffix} />}
+            </p>
+            <span className='text-sm md:text-base font-semibold text-gray-300'>{label}</span>
+        </motion.div>
+    );
+
     return (
-        <div className='text-white flex items-center justify-around gap-10 max-lg:flex-wrap' ref={ref}>
-
-                <p className='text-8xl max-md:w-1/3  max-md:text-5xl font-black flex flex-col gap-5 text-center' >{inView && <CountUp  suffix='+' duration={4} end={100} />} <span className='text-sm font-fontpopins font-semibold'>Tamamlanan proje</span></p>
-                <div className='w-0.5 h-28 opacity-80 bg-white max-lg:hidden'>
-
-                </div>
-                <p className='text-8xl max-md:w-1/3  max-md:text-5xl font-black flex flex-col gap-5 text-center' >{inView && <CountUp  suffix='+' duration={4} end={20} />} <span className='text-sm font-fontpopins font-semibold'>Marka</span></p>
-                <div className='w-0.5 h-28 opacity-80 bg-white max-lg:hidden'>
-
-                </div> <p className='text-8xl max-md:w-1/3  max-md:text-5xl font-black flex flex-col gap-5 text-center' >{inView && <CountUp  suffix='B' duration={4} end={14} />} <span className='text-sm font-fontpopins font-semibold'>Tıklanma</span></p>
-                <div className='w-0.5 h-28 opacity-80 bg-white max-lg:hidden'>
-
-                </div> <p className='text-8xl max-md:w-1/3 max-md:text-5xl font-black flex flex-col gap-5 text-center' >{inView && <CountUp  suffix='kg' duration={4} end={7} separator=',' />} <span className='text-sm font-fontpopins font-semibold'>Aylık kahve</span></p>
-                
+        <div className='flex items-center justify-around gap-8 md:gap-12 flex-wrap w-full' ref={ref}>
+            <StatItem value={100} label="Tamamlanan Proje" suffix="+" />
+            
+            <div className='hidden md:block w-0.5 h-32 bg-gradient-to-b from-purple-500 via-indigo-500 to-cyan-500 rounded opacity-50'></div>
+            
+            <StatItem value={20} label="Marka" suffix="+" />
+            
+            <div className='hidden md:block w-0.5 h-32 bg-gradient-to-b from-purple-500 via-indigo-500 to-cyan-500 rounded opacity-50'></div>
+            
+            <StatItem value={14} label="Tıklanma" suffix="B" />
+            
+            <div className='hidden md:block w-0.5 h-32 bg-gradient-to-b from-purple-500 via-indigo-500 to-cyan-500 rounded opacity-50'></div>
+            
+            <StatItem value={7} label="Aylık Kahve" suffix="kg" />
         </div>
     )
 }

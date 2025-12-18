@@ -6,7 +6,7 @@ import Son from "@/components/hakkimizda/son/index"
 
 const page = () => {
     return (
-        <div >
+        <div className="bg-gradient-to-br from-slate-950 via-black to-slate-900 pt-20">
             <Main />
             <Vizyon />
             <Misyon />

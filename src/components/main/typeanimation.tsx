@@ -18,7 +18,7 @@ const TypeAnimationComponent = () => {
         hazır!
         <span className="ml-3 text-4xl max-md:text-3xl">
           <TypeAnimation
-            className="px-1 py-1 bg-zinc-700 rounded-lg"
+            className="px-2 sm:px-3 py-1 sm:py-2 bg-gradient-to-r from-purple-800 to-indigo-800 rounded-lg text-purple-50"
             sequence={[
               "pratik",
               1000,
@@ -48,14 +48,14 @@ const TypeAnimationComponent = () => {
 
       <a
         title="qr menü incele"
-        className="px-7 py-2 rounded-lg font-semibold bg-[#333333] text-white opacity-100 whitespace-nowrap xl:text-lg"
+        className="px-7 py-2 rounded-lg font-semibold bg-gradient-to-r from-purple-800 to-indigo-800 text-white hover:from-purple-900 hover:to-indigo-900 transition opacity-100 whitespace-nowrap xl:text-lg"
         href="#inceleyin"
       >
         inceleyin
       </a>
       <a
         title="qr menü bilgi al"
-        className="px-7 py-2 rounded-lg font-semibold bg-[#00af74] text-white whitespace-nowrap xl:text-lg"
+        className="px-7 py-2 rounded-lg font-semibold bg-gradient-to-r from-slate-600 to-slate-700 text-white hover:from-slate-700 hover:to-slate-800 transition whitespace-nowrap xl:text-lg"
         href="/iletisim"
       >
         bilgi alın

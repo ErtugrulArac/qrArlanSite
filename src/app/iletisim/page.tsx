@@ -4,7 +4,7 @@ import Bilgi from "@/components/iletisim/bilgiler"
 
 const page = () => {
   return (
-    <div className='bg-white mt-20 py-16'>
+    <div className='bg-gradient-to-br from-slate-950 via-black to-slate-900 mt-20 py-16 min-h-screen'>
         <Map />
         <Bilgi />
     </div>
